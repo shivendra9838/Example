@@ -1,0 +1,222 @@
+<html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    h2 {
+        background-color: blue;
+        border: 2px solid black;
+        font-size: 50px;
+        width: 500px;
+    }
+
+    body {
+        background-image: url("download.jpg");
+        padding-left: 0px;
+    }
+
+    h3 {
+        background-color: black;
+        color: white;
+        border: 2px solid turquoise;
+        font-size: 30px;
+        
+    }
+
+    p {
+        background-image: url("education-technology-futuristic-background-vector-gradient-blue-digital-remix_53876-114092.webp");
+        color: white;
+        border: 2px solid navy;
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    /* Style the sidebar - fixed full height */
+    .sidebar {
+        height: 100%;
+        width: 100px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 16px;
+    }
+
+    /* Style sidebar links */
+    .sidebar a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #818181;
+        display: block;
+    }
+
+    /* Style links on mouse-over */
+    .sidebar a:hover {
+        color: #f1f1f1;
+    }
+
+    /* Style the main content */
+    .main {
+        margin-left: 160px;
+        /* Same as the width of the sidenav */
+        padding: 0px 10px;
+    }
+
+    /* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+    @media screen and (max-height: 450px) {
+        .sidebar {
+            padding-top: 15px;
+        }
+
+        .sidebar a {
+            font-size: 18px;
+        }
+    }
+</style>
+
+
+<body>
+
+    <!-- The sidebar -->
+    <div class="sidebar">
+
+        <div>
+            <center> <img href="" style="height: 70px; width: 70px"
+                    src="data:image/jpeg;base64,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">
+                </img></center>
+
+        </div>
+
+        <br>
+        <a href="#home"><i></i> Topic 1</a>
+        <a href="#services"><i></i> Topic 2</a>
+        <a href="#clients"><i></i> Topic 3</a>
+        <a href="#contact"><i></i> Topic 4</a>
+        <a style=" position:absolute; bottom: 30px;" href=""> Related Topics </a>
+    </div>
+
+    <div>
+        <center>
+
+            <h2>
+                Learning System
+            </h2>
+            <hr>
+            <mark>
+                <a href="Home.html">
+                    <span style="background-color:yellow" />Home</span>
+                </a>
+            </mark>
+            &nbsp;
+            <a href="video.html">
+                <span style="background-color:yellow" />Video</span>
+            </a>
+            &nbsp;
+            <a href="tuto.html">
+                <span style="background-color:yellow" /> Tutorial </span>
+            </a>
+            &nbsp;
+            <a href="testyourself.html">
+                <span style="background-color:yellow" />Test yourself</span>
+            </a>
+            &nbsp;
+            <a href="contactus.html">
+                <span style="background-color:yellow" />Contact us</span>
+            </a>
+            </ol>
+            <br>
+            <br>
+            <br>
+            <div style="padding: 0 50px;">
+                <div style="border: 1px solid black ;">
+
+                    <h3>
+                        Subject info:
+                    </h3>
+                    <p>
+                        <b>
+                            A learning system is essentially a collection of artefacts that are brought together, in
+                            an appropriate way, in order to create an environment that will facilitate various types of
+                            learning process. Learning systems can take a variety of different forms - for example, a
+                            book, a mobile form, a computer, an online forum, a school and a university. Most learning
+                            systems will provide various types of learning resource and descriptions of procedures for
+                            using these to achieve particular learning outcomes. They will also embed various strategies
+                            for assessing the levels and quality of the achievement of their users. Learn more in: Using
+                            Metanotation as a Tool for.</b>
+                    </p>
+                </div>
+
+            </div>
+
+            <div style="padding: 0 50px  0  0 ;">
+
+                <div style="border: 1px solid black ;">
+
+                    <h3>
+                        Topic 1:
+                    </h3>
+                    <p>
+                        <b>
+                            A description of increasing levels of difficulty and complexity in acquiring knowledge,
+                            skills and attitudes within a domain. It implies that learning is a process of increasing
+                            difficulty and complexity, rather than a body of content to be covered within specific grade
+                            levels. Teachers need to have in mind a continuum of how learning develops in any particular
+                            knowledge domain so that they are able to locate students current learning status and decide
+                            on pedagogical action to move students learning forward. Learning progressions that clearly
+                            articulate a progression of learning in a domain can provide a comprehensive view of what is
+                            to be learned, support instructional planning, and act as a touchstone.
+                        </b>
+                    </p>
+                </div>
+
+
+            </div>
+            <div style="padding: 30px; position: absolute; right:20px;font-size: 15px;">
+                Feedback About Website
+            </div>
+
+        </center>
+
+        <div style="padding:50px 200px ;">
+            <button style="float: light;">
+                Previous Page
+            </button>
+
+
+            <button style="float: right;">
+                Next Page
+            </button>
+        </div>
+        <div style="padding:1px 150px">
+            <br>
+            <br>
+            <br>
+            <br>
+            <div style="border: 1px solid black;font-size: 20px;
+            background-color: red;">
+                <Button>FAQ</Button>
+                <center>
+                    @copyrights
+                </center>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+<footer>
+
+</footer>
+
+</html>
